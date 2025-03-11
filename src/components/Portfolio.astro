@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<div id="container" class="flex flex-col items-center justify-center gap-4 p-4 max-w-3xl mx-auto">
+    <header class="flex md:flex-row flex-col items-center justify-center gap-4 p-4">
+        <div id="avatar">
+            <Image width={48} height={64} class="size-48 shadow-xl rounded-md" src="https://avatars.githubusercontent.com/u/32526223?v=4" alt="GitHub Avatar" />
+        </div>
+        <div id="hero">
+            <h1 class="text-2xl font-bold">David Zambrano Agudo</h1>
+            <p class="text-lg">Full Stack Developer</p>
+            <div id="about">
+                <h2 class="text-2xl font-bold">About me</h2>
+                <p class="max-w-md">
+                    I'm working like Middle Web developer, I have 5 years of experience with PHP and Laravel. In my job, I am using Spring, Angular and Laravel.              
+                </p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="links" class="flex justify-center gap-4 p-4">
+            <a target="_blank" title="GitHub" href="https://github.com/davidzcode"><i class="ri-github-fill"></i></a>
+            <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/davidzcode/"><i class="ri-linkedin-fill"></i></a>
+            <a target="_blank" title="DEV" href="https://dev.to/davidzcode"><i class="ri-external-link-line"></i></a>
+        </div>
+    </section>
+</div>
