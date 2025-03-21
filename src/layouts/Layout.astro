@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Analytics from '@vercel/analytics/astro'
 import  SpeedInsights  from "@vercel/speed-insights/astro"
+const { title } = Astro.props;
 ---      
 
 <!doctype html>
@@ -11,7 +12,7 @@ import  SpeedInsights  from "@vercel/speed-insights/astro"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		
-		<title>David Z. Agudo - Portfolio</title>
+		<title>David Z. Agudo - {title}</title>
 		<meta name="description" content="David Z. Agudo - Portfolio" />
 		<meta name="author" content="David Z. Agudo" />
 		<meta name="keywords" content="David Z. Agudo, Portfolio, Developer, Web Developer, Software Developer" />
